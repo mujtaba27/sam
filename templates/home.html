@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      {{company_name}} Advisor
+    </title>
+    <style>
+      #banner{
+        height:360px;
+        object-fit: cover;
+        width:100%;
+      }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  </head>
+<body>
+  <div class="container">
+    <h1 class="text-center">SAM Advisor</h1>
+    <img class="img-fluid" id="banner" src="https://sam-1--mujtaba27.repl.co/static/banner.jpg" height="320" alt="banner">
+  <h2 class="text-center mt-2 mb-4">About SAM Advisor</h2>
+  <p class="lead">Welcome to SAM Advisor, your trusted partner in providing comprehensive and innovative consulting services. With a deep understanding of the dynamic business landscape, we specialize in delivering expert guidance and strategies in the fields of finance, marketing, business analysis, and market trends.
+
+At SAM Advisor, we recognize that businesses today face numerous challenges and opportunities that require specialized knowledge and insights. Our team of experienced consultants brings a wealth of industry expertise, ensuring that we deliver tailored solutions to meet your unique needs.
+
+Whether you are seeking to optimize your financial operations, develop effective marketing strategies, analyze market trends, or navigate complex business environments, we are here to assist you at every step of the way. Our consultancy services are designed to empower organizations of all sizes, from startups to established enterprises, helping them make informed decisions, drive growth, and achieve sustainable success.
+
+What sets us apart is our commitment to excellence, integrity, and client satisfaction. We take the time to truly understand your business objectives and challenges, enabling us to provide practical recommendations and implement strategies that yield measurable results. Our collaborative approach ensures that we work closely with your team, fostering a strong partnership built on trust and mutual success.
+
+With our deep industry knowledge, analytical expertise, and strategic mindset, we are well-equipped to address the complexities of today's business landscape. We stay up-to-date with the latest market trends, emerging technologies, and best practices, allowing us to offer forward-thinking solutions that give you a competitive edge.
+
+Discover the power of professional consultancy with SAM Advisor. Contact us today to schedule a consultation and unlock the full potential of your business. Together, we will navigate the challenges, seize opportunities, and pave the way for your organization's growth and prosperity.
+
+
+
+
+</p>
+  <h2 class="text-center mt-2 mb-4">Services List</h2>
+  <div>
+    {% for job in jobs %}
+      {% include 'serviceitem.html' %}
+    {% endfor %}
+  </div>
+    <div class="text-center">
+  <button class="btn btn-primary btn-lg mb-4">Contact Us</button>
+  <p class="text-center">Copyright 2023, SAM</p>
+    </div>
+</div>
+</body>
+</html>
